@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Innovation Journey</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #0d75dda5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .title-box {
+            background-color: #fff;
+            border: 2px solid #e91132b4;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 2rem auto;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            color: hsl(0, 85%, 49%);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        nav {
+            margin-top: 1.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 15px 15px; 
+        }
+
+        nav ul li a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 16px 25px;
+            line-height: 1.8;
+            border-radius: 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffe5e5;
+            color: #ff6f61;
+            border: 2px solid #ff6f61;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(226, 30, 12, 0.5);
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 4px;
+            background-color: currentColor;
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        #about h2 { color: #ff6f61; }
+        #education h2 { color : #007bff; }
+        #experience h2 { color: #28a745; }
+        #publications h2 { color: #dc3545; }
+        #achievements h2 { color: #ffc107; }
+        #projects h2 { color: #6f42c1; }
+        #membership h2 { color: #17a2b8; }
+        #research h2 { color: #fd7e14; }
+        #events h2 { color: #20c997; }
+        #presentations h2 { color: #0c47cf; }
+        #courses h2 { color: #2b1bd4c0; }
+        #contact h2 { color: #343a40; }
+
+        p, ul {
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+
+        #about { background-color: white; }
+        #education { background-color: #d9f0ff; }
+        #experience { background-color: #e2ffe1; }
+        #publications { background-color: #ffd6e3; }
+        #achievements { background-color: #d6fffb; }
+        #projects { background-color: #fbe4ff; }
+        #membership { background-color: #ffe3b3; }
+        #research { background-color: #e5ffcb; }
+        #events { background-color: #fff2c9; }
+        #presentations { background-color: #f9e4d9; }
+        #courses { background-color: #e0f4ff; }
+        #contact { background-color: #ffefd5; }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-top: 1rem;
+        }
+
+        form input, form textarea {
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+
+        form button {
+            margin-top: 1.5rem;
+            padding: 0.75rem;
+            background-color: #e22c1b9d;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #ff856d;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="title-box">
+            <h1>Welcome to my Personal Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#achievements">Awards and Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#presentations">Presentations</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my personal portfolio website! I am passionate student with keen interst in coding and data science.</p>
+            <ul>
+                <li>Name          - Ritam Pal</li>
+                <li>Father's Name - Mrinal Kanti Pal</li>
+                <li>Mother,s Name - Ruma Pal</li>
+                <li>Date of Birth - 06/04/2005</li>
+                <li>Gender        - Male</li>
+                <li>Nationality   - Indian</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Educational Background</h2>
+            <ul>
+                <li>Completed <u>Secondary and Higher Secondary Education</u> at St. Paul's Academy,Burdwan.</li>
+                <li>Current education status: <u>Bachelor of Technology</u> at University of Engineering and Management,Kolkata.</li>
+                <li>Current Year: First Year First Semester</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Currently as a student I have no professional experience.</p>
+        </section>
+
+        <section id="publications">
+            <h2>Paper/Patent Publications</h2>
+            <p>No publications till date.</p>
+        </section>
+
+        <section id="achievements">
+            <h2>Awards and Achievements</h2>
+            <p>None</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+               <li> A live model of a Tonoscope.</li>
+            </ul>
+        </section>
+
+        <section id="membership">
+            <h2>Membership</h2>
+            <p>None</p>
+        </section>
+
+        <section id="research">
+            <h2>Research</h2>
+            <p>Research interests include exploring applications of Java and other programming languages in software development, focusing on algorithm design, optimization, and practical coding solutions for real-world problems.</p>
+        </section>
+
+        <section id="events">
+          <h2>List of Events</h2>
+          <ul>
+             <li>Attended in a <u>Application Development Program</u> held by Devsprint.</li>
+             <li>Attended in the <u>Smart Maker's Festival.</u></li>
+          </ul>
+        </section>
+
+        <section id="presentations">
+            <h2>Poster/Paper Presentations</h2>
+            <ul>
+              <li>Physics Poster Presentation,UEM,Kolkata.</li>
+            </ul>
+        </section>
+
+        <section id="courses">
+            <h2>Courses</h2>
+            <ul>
+                <li>NPTEL Soft Skills</li>
+                <li>Cousera Google AI Essentials</li>
+                <li>LinkedIn Learning Course</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="#">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email id</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div>
+                <p>Email: ritampal0505@gmail.com</p>
+                <p>Phone: 7872338928</p>
+                <p>LinkedIn: <a href ="https://www.linkedin.com/in/ritam-pal-511465318/" style="color:blue;">LinkedIn Profile</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Innovation Journey</p>
+    </footer>
+</body>
+</html>
